@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+abstract class Figura {
+    {abstract} +calcularArea(): void
+}
+
+class Circle {
+    - radius: double
+    +calculateArea(): void
+}
+
+class Square {
+    - base: double
+    - height: double
+    +calculateArea(): void
+}
+
+class Triangle {
+    - base: double
+    - height: double
+    +calculateArea(): void
+}
+
+class Rectangle {
+    - base: double
+    - height: double
+    +calculateArea(): void
+}
+
+class Pentagon {
+   - apothem: double
+    - side: double
+    +calculateArea(): void
+}
+
+Figura <|-- Circle
+Figura <|-- Square
+Figura <|-- Triangle
+Figura <|-- Rectangle
+Figura <|-- Pentagon
+
+@enduml
